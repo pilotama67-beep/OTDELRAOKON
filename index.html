@@ -2,12 +2,12 @@
 <html lang="ru">
 <head>
     <meta name="google-site-verification" content="iuthJGEo3CFoj8H6eMR6bLGiRr4Uxk249Rxmq7tuAPw" />
-    <meta charset="UTF-8">
     <meta name="yandex-verification" content="6df9e8555ca81a76" />
-    <meta name="description" content="Отделка окон любой сложности. Фото работ, примеры дизайна, контакты.">
-<meta name="keywords" content="отделка окон, ремонт окон, отделка откосов">
-<meta name="robots" content="index, follow">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Отделка окон любой сложности. Фото работ, примеры дизайна, контакты.">
+    <meta name="keywords" content="отделка окон, ремонт окон, отделка откосов">
+    <meta name="robots" content="index, follow">
     <title>Мои работы | Портфолио</title>
     <style>
         * {
@@ -23,7 +23,6 @@
             line-height: 1.6;
         }
 
-        /* Меню навигации */
         .menu {
             background-color: #2c3e50;
             padding: 1rem 0;
@@ -56,14 +55,12 @@
             background-color: #e67e22;
         }
 
-        /* Контент */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem 20px;
         }
 
-        /* Секции */
         .section {
             display: none;
             animation: fadeIn 0.5s ease;
@@ -78,7 +75,6 @@
             to { opacity: 1; transform: translateY(0);}
         }
 
-        /* Кнопки-категории (фильтрация) */
         .filter-buttons {
             display: flex;
             justify-content: center;
@@ -103,7 +99,6 @@
             color: white;
         }
 
-        /* Галерея работ */
         .gallery {
             display: flex;
             flex-wrap: wrap;
@@ -118,7 +113,7 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             width: 320px;
             transition: transform 0.3s;
-            display: none; /* Скрыто по умолчанию, показывается фильтром */
+            display: none;
         }
 
         .work-item.show {
@@ -133,7 +128,7 @@
             width: 100%;
             height: 250px;
             object-fit: cover;
-            background-color: #ddd; /* заглушка, пока нет фото */
+            background-color: #ddd;
         }
 
         .work-item .text {
@@ -145,7 +140,6 @@
             color: #2c3e50;
         }
 
-        /* Контакты */
         .contacts {
             text-align: center;
         }
@@ -172,7 +166,6 @@
             transform: scale(1.05);
         }
 
-        /* Футер */
         footer {
             background-color: #2c3e50;
             color: white;
@@ -184,7 +177,6 @@
 </head>
 <body>
 
-<!-- Меню -->
 <nav class="menu">
     <ul>
         <li><a href="#" data-page="home">Главная</a></li>
@@ -194,29 +186,24 @@
 </nav>
 
 <div class="container">
-    <!-- Секция: Главная -->
     <div id="home" class="section active">
         <h1>Добро пожаловать!</h1>
         <p>Здесь вы можете посмотреть примеры моих работ по отделке. Выбирайте категорию в разделе "Примеры работ".</p>
         <br>
-        <img src="https://via.placeholder.com/800x400?text=Ваше+фото+или+логотип" alt="Заглушка" style="width:100%; border-radius: 10px;">
+        <img src="https://via.placeholder.com/800x400?text=Ваше+фото" alt="Заглушка" style="width:100%; border-radius: 10px;">
         <p style="margin-top:1rem"><strong>Качественно. Надёжно. С душой.</strong></p>
     </div>
 
-    <!-- Секция: Примеры работ -->
     <div id="works" class="section">
         <h2 style="text-align:center">Наши работы</h2>
         
-        <!-- Кнопки фильтрации категорий -->
         <div class="filter-buttons">
             <button class="filter-btn active" data-category="all">Все работы</button>
             <button class="filter-btn" data-category="external">Внешняя отделка</button>
             <button class="filter-btn" data-category="internal">Внутренняя отделка</button>
         </div>
 
-        <!-- Галерея -->
         <div class="gallery">
-            <!-- Пример работы 1 (Внешняя отделка) -->
             <div class="work-item" data-category="external">
                 <img src="https://via.placeholder.com/320x250?text=Фасад+дома" alt="Фасад дома">
                 <div class="text">
@@ -225,7 +212,6 @@
                 </div>
             </div>
 
-            <!-- Пример работы 2 (Внешняя отделка) -->
             <div class="work-item" data-category="external">
                 <img src="https://via.placeholder.com/320x250?text=Кирпичный+фасад" alt="Кирпичный фасад">
                 <div class="text">
@@ -234,7 +220,6 @@
                 </div>
             </div>
 
-            <!-- Пример работы 3 (Внутренняя отделка) -->
             <div class="work-item" data-category="internal">
                 <img src="https://via.placeholder.com/320x250?text=Дизайн+гостиной" alt="Дизайн гостиной">
                 <div class="text">
@@ -243,7 +228,6 @@
                 </div>
             </div>
 
-            <!-- Пример работы 4 (Внутренняя отделка) -->
             <div class="work-item" data-category="internal">
                 <img src="https://via.placeholder.com/320x250?text=Ванная+комната" alt="Ванная">
                 <div class="text">
@@ -252,7 +236,6 @@
                 </div>
             </div>
 
-            <!-- Ещё один пример (для демонстрации) -->
             <div class="work-item" data-category="external">
                 <img src="https://via.placeholder.com/320x250?text=Цоколь+дома" alt="Цоколь">
                 <div class="text">
@@ -263,7 +246,6 @@
         </div>
     </div>
 
-    <!-- Секция: Контакты -->
     <div id="contacts" class="section">
         <div class="contacts">
             <h2>Свяжитесь со мной</h2>
@@ -273,7 +255,6 @@
                 <a href="mailto:вашemail@example.com" class="social-btn">✉️ Email</a>
                 <a href="tel:+71234567890" class="social-btn">📞 Позвонить</a>
             </div>
-            <p style="margin-top: 2rem;">Или напишите в форму ниже (пока просто текст, позже можно добавить настоящую форму)</p>
         </div>
     </div>
 </div>
@@ -283,7 +264,6 @@
 </footer>
 
 <script>
-    // 1. Переключение между страницами (меню)
     const pages = document.querySelectorAll('.section');
     const menuLinks = document.querySelectorAll('.menu a');
 
@@ -292,27 +272,22 @@
             e.preventDefault();
             const pageId = link.getAttribute('data-page');
             
-            // Скрыть все секции
             pages.forEach(page => {
                 page.classList.remove('active');
             });
-            // Показать выбранную секцию
             document.getElementById(pageId).classList.add('active');
 
-            // Если перешли в "Примеры работ" — сбросить фильтр на "Все"
             if (pageId === 'works') {
                 document.querySelector('.filter-btn[data-category="all"]').click();
             }
         });
     });
 
-    // 2. Фильтрация работ по категориям
     const filterBtns = document.querySelectorAll('.filter-btn');
     const workItems = document.querySelectorAll('.work-item');
 
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Убрать активный класс у всех кнопок
             filterBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
 
@@ -328,8 +303,6 @@
         });
     });
 
-    // Изначально показать все работы (на случай, если кто-то зайдет сразу в раздел)
-    // (код выше сам отработает, но на всякий случай вызовем вручную)
     document.querySelector('.filter-btn[data-category="all"]').click();
 </script>
 
